@@ -34,6 +34,7 @@
             this.lblSueldo = new System.Windows.Forms.Label();
             this.btnMostrar = new System.Windows.Forms.Button();
             this.btnPrueba = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtNombre
@@ -88,11 +89,21 @@
             this.btnPrueba.UseVisualStyleBackColor = true;
             this.btnPrueba.Click += new System.EventHandler(this.btnPrueba_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(487, 125);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(666, 352);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnPrueba);
             this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.lblSueldo);
@@ -114,6 +125,7 @@
         private System.Windows.Forms.Label lblSueldo;
         private System.Windows.Forms.Button btnMostrar;
         private System.Windows.Forms.Button btnPrueba;
+        private System.Windows.Forms.Button button1;
     }
 }
 
