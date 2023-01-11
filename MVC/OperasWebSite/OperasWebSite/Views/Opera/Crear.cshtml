@@ -1,0 +1,31 @@
+﻿@model OperasWebSite.Models.Opera
+
+@{
+    ViewBag.Title = "Crear";
+}
+
+<h1> New Opera</h1>
+@using (Html.BeginForm("Create", "Opera", FormMethod.Post))
+{
+    <p>
+        @Html.LabelFor(model => model.Title)
+        @Html.EditorFor(modelo => modelo.Title)
+        @Html.ValidationMessageFor(model => model.Title)
+    </p>
+
+    <p>
+        @Html.LabelFor(model => model.Compositor)
+        @Html.EditorFor(modelo => modelo.Compositor)
+        @Html.ValidationMessageFor(model => model.Compositor)
+    </p>
+
+    <p>
+        @Html.LabelFor(model => model.Year)
+        @Html.EditorFor(modelo => modelo.Year)
+        @Html.ValidationMessageFor(model => model.Year)
+    </p>
+    <input type="submit" value="Create" />
+
+    @Html.ActionLink("Go to Index", "Index", "Opera")
+}
+

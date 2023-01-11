@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<div>
+    <h3>@ViewBag.Fecha</h3>
+    <h1>Bienvenidos al sistema demo MVC</h1>
+    <p>
+        @Html.ActionLink("Go to Opera", "Index", "Opera")
+    </p>
+</div>
+
+@section SideBar{
+    <p>Otro menú</p>
+    <ul>
+        <li><a href="/home/About">About</a></li>
+        <li>@Html.ActionLink("Ir a About", "About", "Home")</li>
+        <li><a href="#Link1">Link1</a></li>
+        <li><a href="#Link2">Link2</a></li>
+        <li><a href="#Link3">Link3</a></li>
+        <li><a href="#Link4">Link4</a></li>
+    </ul>
+    
+    
+    }

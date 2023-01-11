@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/main.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="header">
+        <h2>Mi sitio en MVC</h2>
+    </div>
+    <div id="menu">
+        <p>Zona de menú</p>
+    </div>
+    <div id="sideBar">
+        @if (IsSectionDefined("SideBar"))
+        {
+            @RenderSection("SideBar")
+        }
+        else
+        {
+            <h2>Zona Sidebar</h2>
+        }
+    </div>
+    <div id="content">
+        @RenderBody()
+    </div>
+    <div id="footer">
+        <p>info@mvc.com</p>
+    </div>
+</body>
+</html>

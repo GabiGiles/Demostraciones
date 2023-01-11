@@ -37,5 +37,19 @@ namespace WindowsApp
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int anio = dateTimePicker1.Value.Year;
+
+            MessageBox.Show(anio.ToString());
+        }
+
+       
+        private void button3_Click(object sender, EventArgs e)
+        {
+     
+
+        }
     }
 }
